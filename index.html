@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Atomic SRE - Flagship Orchestration Engine for Autonomous SRE Multi-Agent Organisations." />
+    <title>Atomic SRE | Autonomous SRE Engine</title>
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <!-- Premium Bright Glowing Background Effects -->
+    <div class="glow-bg">
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+      <div class="glow-orb orb-3"></div>
+    </div>
+
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <span class="logo-accent">Atomic</span> SRE
+        </a>
+        <div class="nav-right">
+          <nav class="nav-links">
+            <a href="#install">Install</a>
+            <a href="#workflow">Workflow</a>
+            <a href="#preview">Interface</a>
+            <a href="#features">Features</a>
+            <a href="#integrations">Integrations</a>
+          </nav>
+          <div class="nav-actions">
+            <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle Theme">
+              <!-- Sun Icon (visible in dark mode) -->
+              <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <!-- Moon Icon (visible in light mode) -->
+              <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+            <a href="https://github.com/DsThakurRawat/Atomic-SRE" target="_blank" rel="noopener noreferrer" class="btn-github">
+              <svg class="icon-github" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Hero Section (First Fold focuses on getting started) -->
+      <section id="install" class="hero-section">
+        <div class="hero-split-container">
+          <!-- Left Column: Installation Info -->
+          <div class="hero-left">
+            <h1 class="hero-title">
+              Your Agentic Site Reliability Engineer
+            </h1>
+            <p class="hero-subtitle">
+              Atomic SRE is the autonomous diagnostic engine for microservices. Stream CloudWatch logs, query codebase context via GitHub MCP, and dispatch verified alerts directly to Slack.
+            </p>
+            
+            <!-- Immediate installation code block -->
+            <div class="installer-card">
+              <div class="installer-header">
+                <span class="installer-title">Install with one command</span>
+              </div>
+              <div class="code-box">
+                <pre><code id="code-install">curl -sSL https://raw.githubusercontent.com/DsThakurRawat/Atomic-SRE/main/install.sh | bash</code></pre>
+                <button class="btn-copy" data-target="code-install">
+                  <span>Copy</span>
+                </button>
+              </div>
+              <div class="installer-footer">
+                Or run <code>pip install atomic-sre</code> in your Python environment
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Showcase Tab Switcher -->
+          <div class="hero-right">
+            <div class="terminal-showcase">
+              <div class="terminal-showcase-header">
+                <div class="terminal-tabs">
+                  <button class="terminal-tab active" data-tab="tab-setup">1. Setup Wizard</button>
+                  <button class="terminal-tab" data-tab="tab-dashboard">2. Diagnostic Home</button>
+                </div>
+              </div>
+              
+              <div class="terminal-showcase-body">
+                <!-- Tab Content: Wizard Setup -->
+                <div id="tab-setup" class="terminal-tab-content active">
+                  <div class="terminal-window">
+                    <div class="terminal-window-header">
+                      <div class="screenshot-window-dots">
+                        <span class="window-dot"></span>
+                        <span class="window-dot"></span>
+                        <span class="window-dot"></span>
+                      </div>
+                      <span class="terminal-window-title">atomic-sre init</span>
+                    </div>
+                    <div class="terminal-image-container">
+                      <img src="/docs/imgs/cli-setup.png" alt="Guided Wizard Setup Terminal Screen" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tab Content: Active Dashboard -->
+                <div id="tab-dashboard" class="terminal-tab-content">
+                  <div class="terminal-window">
+                    <div class="terminal-window-header">
+                      <div class="screenshot-window-dots">
+                        <span class="window-dot"></span>
+                        <span class="window-dot"></span>
+                        <span class="window-dot"></span>
+                      </div>
+                      <span class="terminal-window-title">atomic-sre run</span>
+                    </div>
+                    <div class="terminal-image-container">
+                      <img src="/docs/imgs/cli-home.png" alt="Local Monitoring Dashboard Terminal Screen" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section id="workflow" class="section-container workflow-section">
+        <div class="section-header">
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">
+            From log group anomaly detection to Slack resolution reports, in four automated steps.
+          </p>
+        </div>
+
+        <div class="workflow-steps">
+          <!-- Step 1 -->
+          <div class="workflow-step">
+            <div class="step-number">1</div>
+            <div class="step-card">
+              <h4>Log Anomaly Ingestion</h4>
+              <p>Monitors CloudWatch streams and isolates stack trace errors automatically.</p>
+            </div>
+          </div>
+          
+          <div class="step-arrow">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="workflow-step">
+            <div class="step-number">2</div>
+            <div class="step-card">
+              <h4>Context Discovery</h4>
+              <p>Uses GitHub MCP to query repository status, blaming file edits and revisions.</p>
+            </div>
+          </div>
+
+          <div class="step-arrow">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="workflow-step">
+            <div class="step-number">3</div>
+            <div class="step-card">
+              <h4>Multi-Agent Diagnosis</h4>
+              <p>SRE orchestrator plans and conducts deep diagnostic inspections of code paths.</p>
+            </div>
+          </div>
+
+          <div class="step-arrow">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="workflow-step">
+            <div class="step-number">4</div>
+            <div class="step-card">
+              <h4>Slack Notifications</h4>
+              <p>Pushes root cause summaries and proposed fixes directly to the team channel.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visual Interface Showcase Section -->
+      <section id="preview" class="section-container preview-section">
+        <div class="section-header">
+          <h2 class="section-title">The Command Line Interface</h2>
+          <p class="section-subtitle">
+            An interactive setup wizard configures your AWS, GitHub, and Slack integrations, launching into the diagnostics monitoring dashboard.
+          </p>
+        </div>
+
+        <div class="screenshot-grid">
+          <!-- Setup Wizard Screenshot -->
+          <div class="screenshot-card">
+            <div class="screenshot-header">
+              <div class="screenshot-window-dots">
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+              </div>
+              <span class="screenshot-title">Interactive Wizard Setup</span>
+            </div>
+            <div class="screenshot-image-container">
+              <img src="/docs/imgs/cli-setup.png" alt="Atomic SRE Setup Wizard Screen" class="screenshot-img" />
+            </div>
+            <div class="screenshot-info">
+              <h4>Guided Configuration</h4>
+              <p>Prompts for keys, repositories, and notification targets on first execution.</p>
+            </div>
+          </div>
+
+          <!-- Dashboard Screenshot -->
+          <div class="screenshot-card">
+            <div class="screenshot-header">
+              <div class="screenshot-window-dots">
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+              </div>
+              <span class="screenshot-title">Local Monitoring Dashboard</span>
+            </div>
+            <div class="screenshot-image-container">
+              <img src="/docs/imgs/cli-home.png" alt="Atomic SRE CLI Home Dashboard Screen" class="screenshot-img" />
+            </div>
+            <div class="screenshot-info">
+              <h4>Diagnostics Terminal</h4>
+              <p>Observes log groups and coordinates agent actions directly from your machine.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Engine Features -->
+      <section id="features" class="section-container features-section">
+        <div class="section-header">
+          <h2 class="section-title">Engine Features</h2>
+          <p class="section-subtitle">
+            How the autonomous agents coordinate to handle production diagnostic processes.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M20 12a8 8 0 1 0-16 0"/></svg>
+            </div>
+            <h3>Log Observation</h3>
+            <p>Direct integration with AWS CloudWatch log streams. Automatically ingests exceptions, tracks trace patterns, and identifies affected microservices.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Codebase Inspection</h3>
+            <p>Utilises Model Context Protocol (MCP) clients to run queries against your repository. Ingests source files and blame logs to understand code context.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Root Cause Diagnosis</h3>
+            <p>Generates detailed root cause analyses and proposes exact, safe code modifications for human review and auditing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integrations Matrix Section -->
+      <section id="integrations" class="section-container integrations-section">
+        <div class="section-header">
+          <h2 class="section-title">Integrations</h2>
+          <p class="section-subtitle">
+            Current system integration support and active roadmap items.
+          </p>
+        </div>
+
+        <div class="integrations-grid">
+          <!-- LLM Providers -->
+          <div class="integration-card">
+            <h4>Model Providers</h4>
+            <ul>
+              <li class="supported"><span>Anthropic Claude</span> <span class="tag-status live">Live</span></li>
+              <li class="planned"><span>OpenAI GPT</span> <span class="tag-status roadmap">Roadmap</span></li>
+              <li class="planned"><span>vLLM (Local Models)</span> <span class="tag-status roadmap">Roadmap</span></li>
+            </ul>
+          </div>
+          <!-- Log Sources -->
+          <div class="integration-card">
+            <h4>Observability</h4>
+            <ul>
+              <li class="supported"><span>AWS CloudWatch</span> <span class="tag-status live">Live</span></li>
+              <li class="planned"><span>Google Cloud Ingestion</span> <span class="tag-status roadmap">Roadmap</span></li>
+              <li class="planned"><span>Azure Monitor</span> <span class="tag-status roadmap">Roadmap</span></li>
+            </ul>
+          </div>
+          <!-- Version Control -->
+          <div class="integration-card">
+            <h4>Repositories</h4>
+            <ul>
+              <li class="supported"><span>GitHub MCP Client</span> <span class="tag-status live">Live</span></li>
+              <li class="planned"><span>GitLab Ingestion</span> <span class="tag-status roadmap">Roadmap</span></li>
+            </ul>
+          </div>
+          <!-- Chat/Alerting -->
+          <div class="integration-card">
+            <h4>Alert Channels</h4>
+            <ul>
+              <li class="supported"><span>Slack Integration</span> <span class="tag-status live">Live</span></li>
+              <li class="planned"><span>Microsoft Teams</span> <span class="tag-status roadmap">Roadmap</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparison Matrix -->
+      <section id="comparison" class="section-container comparison-section">
+        <div class="section-header">
+          <h2 class="section-title">Where Atomic SRE Fits</h2>
+          <p class="section-subtitle">
+            An honest comparison of diagnostic workflows for modern production platforms.
+          </p>
+        </div>
+
+        <div class="comparison-table-container">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Capabilities</th>
+                <th>Manual Audits</th>
+                <th>Standard Alerts</th>
+                <th>Atomic SRE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feature-label">Anomaly Log Detection</td>
+                <td>Manual search</td>
+                <td class="yes">Pattern matches</td>
+                <td class="yes accent-bg">Automatic stream isolation</td>
+              </tr>
+              <tr>
+                <td class="feature-label">Repository Context Query</td>
+                <td>Slow manual walk</td>
+                <td class="no">None</td>
+                <td class="yes accent-bg">Automated (GitHub MCP)</td>
+              </tr>
+              <tr>
+                <td class="feature-label">Root Cause Analysis</td>
+                <td>Hours of debugging</td>
+                <td class="no">None</td>
+                <td class="yes accent-bg">Autonomous orchestration</td>
+              </tr>
+              <tr>
+                <td class="feature-label">Slack Notification Delivery</td>
+                <td>Manual alert copy</td>
+                <td class="yes">Raw trace logs</td>
+                <td class="yes accent-bg">Rich diagnostic summaries</td>
+              </tr>
+              <tr>
+                <td class="feature-label">Proposed Fixes generation</td>
+                <td>Developer writes it</td>
+                <td class="no">None</td>
+                <td class="yes accent-bg">Direct code patch proposals</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Stay in the loop newsletter signup -->
+      <section class="section-container newsletter-section">
+        <div class="newsletter-card">
+          <h3>Stay in the loop</h3>
+          <p>Get notified when Version 1.0 launches and when new MCP integrations drop. No spam.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+            <input type="email" placeholder="you@company.com" required class="newsletter-input" />
+            <button type="submit" class="btn-primary-action">Notify me</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <div class="footer-grid-container">
+        <div class="footer-brand-col">
+          <a href="#" class="footer-logo">
+            <span class="logo-accent">Atomic</span> SRE
+          </a>
+          <p class="footer-desc">Autonomous SRE Multi-Agent Engine monitoring logs and diagnosing failures directly from repository context.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#install">Install</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+            <li><a href="#preview">CLI Interface</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Integrations</h4>
+          <ul>
+            <li><a href="#integrations">AWS CloudWatch</a></li>
+            <li><a href="#integrations">GitHub MCP</a></li>
+            <li><a href="#integrations">Slack Alerts</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://github.com/DsThakurRawat" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+            <li><a href="https://x.com/DsThakurRawat" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+            <li><a href="https://www.linkedin.com/in/divyansh-rawat-aba930313/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/DsThakurRawat/Atomic-SRE" target="_blank" rel="noopener noreferrer">Project Repository</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Atomic SRE. Released under the MIT License.</p>
+        <p class="footer-author">Maintained by <a href="https://www.linkedin.com/in/divyansh-rawat-aba930313/" target="_blank" rel="noopener noreferrer">DIVYANSH RAWAT</a></p>
+      </div>
+    </footer>
+
+    <!-- Interactive script loading -->
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
